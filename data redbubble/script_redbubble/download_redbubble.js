@@ -3,7 +3,8 @@ const txtTitle = document
   .querySelector(
     "#app > div > div.ds-theme-find-your-thing.App__dsWrapper--1kexh > main > div > div > div:nth-child(2) > div > div.DesktopProductPage__primaryContent--1YKfZ > div.DesktopProductPage__right--2GOKS > div > div:nth-child(1) > div > div:nth-child(1) > div > h1"
   )
-  .textContent.replace(/[/\\?%*:|"<>]/g, "");
+  .textContent.replace(/[/\\?%*:|"<>]/g, "")
+  .replace(/\s+/g, " ");
 
 // Get site URL
 const siteUrl = window.location.href;

@@ -5,7 +5,8 @@ const img = document.querySelector("#unrolledImgNo0 > div > img");
 const altValue = document
   .querySelector("#productTitle")
   .textContent.trim()
-  .replace(/[/\\?%*:|"<>]/g, "");
+  .replace(/[/\\?%*:|"<>]/g, "")
+  .replace(/\s+/g, " ");
 
 // Get the value of the 'src' attribute
 const srcValue = img.src;
